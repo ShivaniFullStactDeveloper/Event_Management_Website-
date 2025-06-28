@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karyam Event Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ <!-- External css link -->
+  <link href="index.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <!-- Header -->
+    <header class="header" id="header">
+      <!-- logo -->
+        <img class="logo" src="./assets/images/karyam-logo-icon.ico"/>
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+          <!-- Home -->
+            <a href="#home">Home</a>
+            <!-- About -->
+            <a href="#about">About</a>
+            <!-- Servieces -->
+            <a href="#services">Services</a>
+            <!-- Venues -->
+            <a href="#venues">Venues</a>
+            <!-- Galley  -->
+            <div class="dropdown">
+                <a href="#gallery">Gallery <i class="fas fa-caret-down"></i></a>
+                <!-- dropdown  -->
+                <div class="dropdown-menu">
+                  <!-- Photos Gallery -->
+                    <a href="#">Photos Gallery</a>
+                    <!-- Video Gallery -->
+                    <a href="#">Video Gallery</a>
+                    <!-- Shorts Gallery -->
+                    <a href="#">Shorts Gallery</a>
+                </div>
+            </div>
+            <!-- Contact -->
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- <div><a href="call">+91 1201547896</a></div> -->
+        <!-- Social icons -->
+        <div class="right-icons">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+       
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel-overlay-content">
+            <h2>Karyam Event Management <br>in Katol</h2>
+            <h4>Creating Unforgettable Moments</h4>
+            <p>From intimate weddings to grand corporate gatherings, we <br> transform your vision into extraordinary experiences.</p>
+            <button class="common-btn ">Contact Us</button>
+            <button class="common-btn common-btn-venue">View Our Venues</button>
+        </div>
+    </div>
+
+    <!-- Our services -->
+    <section class="services-section">
+        <h3 class="title">OUR SERVICES</h3>
+        <h1 class="subtitle">Services by Karyam Event Management</h1>
+        <p class="description">
+            Karyam Event Management is a professional event management company based in Katol, Maharashtra. We provide
+            complete and creative event solutions, including personal celebrations, corporate events, business
+            conferences, private parties, trade exhibitions, virtual event planning, and lively stage shows across
+            Maharashtra. For smooth and unforgettable events, feel free to contact us.
+        </p>
+
+        <div class="divider"><img src="./assets/images/Underline-img.svg"
+                width="500" height="25" alt=""></div>
+
+        <div class="service-images">
+            <!-- Wedding Services -->
+            <div class="container">
+                <img src="https://media.istockphoto.com/id/2200852517/photo/couple-in-traditional-clothing-standing-at-wedding-ceremony.jpg?s=612x612&w=0&k=20&c=lNacDJ6AmR4PS5PdtKR6pCIGCDI2YNUpBiRXG3GdqyE="
+                    alt="Conference" />
+                <!-- <img src="img_avatar.png" alt="Avatar" class="image"> -->
+                <div class="overlay">
+                    <div class="text">Wedding Events</div>
+                </div>
+            </div>
+            <!-- Destination wedding -->
+            <div class="container">
+                <img src="https://travelworldonline.in/wp-content/uploads/2024/09/Goa-Tourism-honoured-as-Best-Wedding-Destination-at-Wow-Awards-Middle-East-2024.jpg"
+                    alt="Stage Decor" />
+                <div class="overlay">
+                    <div class="text">Destination Weddings</div>
+                </div>
+            </div>
+            <!-- Corporate event -->
+            <div class="container">
+                <img src="https://images.pexels.com/photos/3678057/pexels-photo-3678057.png?auto=compress&cs=tinysrgb&w=600"
+                    alt="Wedding" />
+                <div class="overlay">
+                    <div class="text">Corporate Events</div>
+                </div>
+            </div>
+            <!-- Brithday parties -->
+            <div class="container">
+                <img src="https://jashaneventsdecoration.in/wp-content/uploads/2023/02/1643972072_16-transformed.jpeg"
+                    class="image">
+                <div class="overlay">
+                    <div class="text">Birthday Parties</div>
+                </div>
+            </div>
+            <!-- Private Parties -->
+            <div class="container">
+                <img src="https://st4.depositphotos.com/13458514/26547/i/450/depositphotos_265474056-stock-photo-arch-for-the-wedding-ceremony.jpg"
+                    alt="Conference" />
+                <div class="overlay">
+                    <div class="text">Private Parties</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
