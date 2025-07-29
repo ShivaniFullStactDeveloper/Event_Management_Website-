@@ -199,3 +199,58 @@
     renderDots();
     updateCarousel();
     setInterval(nextSlide, 3000);
+
+    //********************************************************************* */
+    // ---------- GET IN TOUCH -------------------
+      // Create floating gold particles
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      
+      const size = Math.random() * 4 + 2;
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDuration = (Math.random() * 6 + 6) + 's';
+      particle.style.animationDelay = Math.random() * 3 + 's';
+      
+      const wrapper = document.querySelector('.contact-wrapper');
+      wrapper.appendChild(particle);
+      
+      setTimeout(() => {
+        particle.remove();
+      }, 12000);
+    }
+
+    // Create particles periodically
+    setInterval(createParticle, 1500);
+
+    // Add button click effect with gold ripple
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+        
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        ripple.style.position = 'absolute';
+        ripple.style.borderRadius = '50%';
+        ripple.style.background = 'rgba(245, 215, 110, 0.6)';
+        ripple.style.transform = 'scale(0)';
+        ripple.style.animation = 'ripple 0.8s ease-out';
+        ripple.style.pointerEvents = 'none';
+        
+        this.appendChild(ripple);
+        
+        setTimeout(() => {
+          ripple.remove();
+        }, 800);
+      });
+    });
+
+   

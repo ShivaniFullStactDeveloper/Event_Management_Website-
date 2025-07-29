@@ -2,139 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>Karyam Event Management</title>
-    <link rel="icon" href="./assets/images/karyam-logo-icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <!-- Extartnal CSS -->
-    <link rel="stylesheet" href="./index.css">
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <title>Karyam Event Management</title>
+  <link rel="icon" href="./assets/images/karyam-logo-icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+     <!-- Extartnal CSS -->
+  <link rel="stylesheet" href="./index.css">
+  <style>
 
-    </style>
+  </style>
 </head>
 
 <body>
-    <header class="header" id="header">
-        <img class="logo" src="./assets/images/karyam-logo.webp" alt="Karyam Logo" />
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#venues" class="nav-link">Venues</a>
-            <div class="dropdown">
-                <a href="#gallery" class="nav-link">Gallery <i class="fas fa-caret-down"></i></a>
-                <div class="dropdown-menu">
-                    <a href="#">Photos Gallery</a>
-                    <a href="#">Video Gallery</a>
-                    <a href="#">Shorts Gallery</a>
-                </div>
-            </div>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <div class="right-icons">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+  <header class="header" id="header">
+    <img class="logo" src="./assets/images/karyam-logo.webp" alt="Karyam Logo" />
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#venues" class="nav-link">Venues</a>
+      <div class="dropdown">
+        <a href="#gallery" class="nav-link">Gallery <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#">Photos Gallery</a>
+          <a href="#">Video Gallery</a>
+          <a href="#">Shorts Gallery</a>
         </div>
-    </header>
+      </div>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="right-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
 
-    <section id="home" class="carousel-container">
-        <div class="carousel-overlay-content">
-            <h2>Karyam Event Management In Katol</h2>
-            <h4>Creating Unforgettable Moments</h4>
-            <p>From intimate weddings to grand corporate gatherings, we transform your vision into extraordinary
-                experiences that last a lifetime.</p>
-            <div class="button-group">
-                <button class="common-btn">Contact Us</button>
-                <button class="common-btn common-btn-venue">View Our Venues</button>
-            </div>
+  <section id="home" class="carousel-container">
+    <div class="carousel-overlay-content">
+      <h2>Karyam Event Management In Katol</h2>
+      <h4>Creating Unforgettable Moments</h4>
+      <p>From intimate weddings to grand corporate gatherings, we transform your vision into extraordinary
+        experiences that last a lifetime.</p>
+      <div class="button-group">
+        <button class="common-btn">Contact Us</button>
+        <button class="common-btn common-btn-venue">View Our Venues</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="services-background">
+      <div class="services-content">
+        <!-- <img src="./assets/images/mandala_bgm-removebg-preview.png"/> -->
+        <h3 class="title scroll-reveal-item">OUR SERVICES</h3>
+        <!-- line -->
+        <div class="divider scroll-reveal-item">
+          <img src="./assets/images/Underline-img.svg" alt="Underline Decoration">
         </div>
-    </section>
+        <!-- sub-title -->
+        <h1 class="subtitle scroll-reveal-item">Services by Karyam Event Management</h1>
+        <p class="description scroll-reveal-item">
+          Karyam Event Management is a professional event management company based in Katol, Maharashtra. We
+          provide
+          complete and creative event solutions, including personal celebrations, corporate events, business
+          conferences, private parties, trade exhibitions, virtual event planning, and lively stage shows
+          across
+          Maharashtra. For smooth and unforgettable events, feel free to contact us.
+        </p>
 
-    <section id="services" class="services-section">
-        <div class="services-background">
-            <div class="services-content">
-                <!-- <img src="./assets/images/mandala_bgm-removebg-preview.png"/> -->
-                <h3 class="title scroll-reveal-item">OUR SERVICES</h3>
-                <!-- line -->
-                  <div class="divider scroll-reveal-item">
-                    <img src="./assets/images/Underline-img.svg" alt="Underline Decoration">
-                </div>
-                <!-- sub-title -->
-                <h1 class="subtitle scroll-reveal-item">Services by Karyam Event Management</h1>
-                <p class="description scroll-reveal-item">
-                    Karyam Event Management is a professional event management company based in Katol, Maharashtra. We
-                    provide
-                    complete and creative event solutions, including personal celebrations, corporate events, business
-                    conferences, private parties, trade exhibitions, virtual event planning, and lively stage shows
-                    across
-                    Maharashtra. For smooth and unforgettable events, feel free to contact us.
-                </p>
 
-               
 
-                <div class="service-images">
-                    <div class="service-container">
-                        <img src="./assets/images/PHOTO-2024-09-15-16-56-40.JPG" alt="Wedding Event" />
-                        <div class="overlay">
-                            <div class="text">Wedding Events</div>
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <img src="./assets/images/PHOTO-2025-06-10-18-07-26.JPG" alt="Destination Wedding" />
-                        <div class="overlay">
-                            <div class="text">Destination Weddings</div>
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <img src="https://zzeeh.com/wp-content/uploads/2023/02/corporate-event-decorators.jpg"
-                            alt="Corporate Event" />
-                        <div class="overlay">
-                            <div class="text">Corporate Events</div>
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <img src="https://cdn.balloondekor.com/14/1750496871349.webp" alt="Birthday Party">
-                        <div class="overlay">
-                            <div class="text">Birthday Parties</div>
-                        </div>
-                    </div>
-                    <div class="service-container">
-                        <img src="./assets/images/PHOTO-2025-06-10-18-07-33 2.JPG" alt="Private Party" />
-                        <div class="overlay">
-                            <div class="text">Private Parties</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="service-images">
+          <div class="service-container">
+            <img src="./assets/images/PHOTO-2024-09-15-16-56-40.JPG" alt="Wedding Event" />
+            <div class="overlay">
+              <div class="text">Wedding Events</div>
             </div>
+          </div>
+          <div class="service-container">
+            <img src="./assets/images/PHOTO-2025-06-10-18-07-26.JPG" alt="Destination Wedding" />
+            <div class="overlay">
+              <div class="text">Destination Weddings</div>
+            </div>
+          </div>
+          <div class="service-container">
+            <img src="https://zzeeh.com/wp-content/uploads/2023/02/corporate-event-decorators.jpg"
+              alt="Corporate Event" />
+            <div class="overlay">
+              <div class="text">Corporate Events</div>
+            </div>
+          </div>
+          <div class="service-container">
+            <img src="https://cdn.balloondekor.com/14/1750496871349.webp" alt="Birthday Party">
+            <div class="overlay">
+              <div class="text">Birthday Parties</div>
+            </div>
+          </div>
+          <div class="service-container">
+            <img src="./assets/images/PHOTO-2025-06-10-18-07-33 2.JPG" alt="Private Party" />
+            <div class="overlay">
+              <div class="text">Private Parties</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- client review -->
-     <div class="testimonial-section">
+  <!-- client review -->
+  <div class="testimonial-section">
     <h2 class="title">Client Testimonial</h2>
-      <!-- line -->
-                  <div class="divider scroll-reveal-item">
-                    <img src="./assets/images/Underline-img.svg" alt="Underline Decoration">
-                </div>
+    <!-- line -->
+    <div class="divider scroll-reveal-item">
+      <img src="./assets/images/Underline-img.svg" alt="Underline Decoration">
+    </div>
     <p class="section-subtitle">See What our Clients Say</p>
-<!-- carts -->
+    <!-- carts -->
     <div class="cart-container">
       <div class="carousel-track" id="carouselTrack"></div>
     </div>
 
     <div class="nav-dots" id="navDots"></div>
   </div>
-   
+  <!-- ********************************************************************** -->
+  <!-- -------- GET IN TOUCH --------------- -->
+  <div class="contact-wrapper">
+    <section class="get-touch-container">
+      <div class="contact-section">
+        <div class="gold-accent top"></div>
+        <div class="gold-accent bottom"></div>
+
+        <div class="contact-left">
+          <h2>Get in Touch</h2>
+          <h3>Ready to Create Something Extraordinary?</h3>
+          <p>
+            Let's bring your vision to life with our expertise in creating
+            memorable events that reflect your unique style and exceed your expectations with luxury and sophistication.
+          </p>
+          <button class="cta-button">Start Your Journey</button>
+        </div>
+
+        <div class="contact-right">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Enter your phone number" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Enter your email address" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Tell us about your luxury event vision..." required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- *********************************************** -->
+  <!-- -------------- FOOTER PART -->
+<footer class="footer">
+  <div class="footer-overlay">
+    <div class="footer-content">
+      <h2 class="footer-title">Karyam <span>Events</span></h2>
+      <p class="footer-subtitle">Creating Unforgettable Moments For Every Occasion</p>
+      <div class="footer-divider"></div>
+
+      <div class="footer-grid">
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li>Wedding Planning</li>
+            <li>Corporate Events</li>
+            <li>Social Gatherings</li>
+            <li>Decor & Design</li>
+            <li>Vendor Coordination</li>
+          </ul>
+        </div>
+ 
+        <!-- Contact -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Event Avenue, Suite 200 Celebration City, 10001</li>
+            <li><i class="fas fa-phone"></i> 555-123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@karyamevents.com</li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div class="footer-section">
+          <h3>Find Us</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.8440688513256!2d78.58121637444178!3d21.277639080434728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4575f37f2cd13%3A0xf8d54a031df2bce7!2sKARYAM%20Event%20Management!5e0!3m2!1sgu!2sin!4v1753809132894!5m2!1sgu!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Karyam Event Management. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
-    <script src="index.js"></script>
+<script src="index.js"></script>
