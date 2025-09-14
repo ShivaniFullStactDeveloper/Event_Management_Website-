@@ -92,6 +92,66 @@
             });
         });
 
+        // ***********************************************
+// ========   SERVICES ARRAY IMAGE ========
+   // Wedding event images array
+    const services = [
+      {
+        title: 'Wedding Events',
+        description: "A day to celebrate love's journey join us in joy and togetherness. ",
+        image: './assets/images/front_page_images/wedding-photo.JPG',
+       alt:'Wedding Event'
+      },
+      {
+        title: 'Destination Wedding',
+        description: 'A destination of dreams—let’s celebrate love in paradise.',
+        image: './assets/images/front_page_images/destination-.JPG',
+        alt: 'Destination Weddings'
+      },
+      {
+        title: 'Corporate Events',
+        description: 'Where professionals meet, learn, and lead—be part of our corporate experience.',
+        image: 'https://zzeeh.com/wp-content/uploads/2023/02/corporate-event-decorators.jpg',
+        alt: 'Corporate Events'
+      },
+        {
+        title: 'Birthday Parties',
+        description: 'A surprise of smiles, laughter, and unforgettable birthday vibes.',
+        image: 'https://cdn.balloondekor.com/14/1750496871349.webp',
+        alt: 'Birthday Parties'
+      },
+        {
+        title: 'Other Events',
+        description: 'Celebrate life’s moments big or small with joy and togetherness.',
+        image: './assets/images/front_page_images/private-party.JPG',
+        alt: 'Other Events'
+      }
+    ];
+
+    // Function to build gallery from an array
+    function createGalleryItems(events) {
+      const gallery = document.getElementById('gallery');
+      gallery.innerHTML = '';
+
+      events.forEach((event, index) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.style.animationDelay = `${index * 0.1}s`;
+
+        galleryItem.innerHTML = `
+          <img src="${event.image}" alt="${event.alt}">
+          <div class="gallery-overlay">
+            <div class="gallery-title">${event.title}</div>
+            <div class="gallery-desc">${event.description}</div>
+          </div>
+        `;
+
+        gallery.appendChild(galleryItem);
+      });
+    }
+
+    // Load wedding images on page load
+    createGalleryItems(services);
         // *****************************************
         // ===== CLIENT SECTION CAROUSEL =====
  const testimonials = [

@@ -13,12 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- bootstrap css -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
- <!-- bootstrap js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-     <!-- Extartnal CSS -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!-- Extartnal CSS -->
   <link rel="stylesheet" href="./pages/css/main.css">
   <link href="">
   <style>
@@ -30,22 +33,21 @@
   <header class="header" id="header">
     <img class="logo" src="./assets/images/logo/karyam-logo-icon.ico" alt="Karyam Logo" />
     <nav class="navbar" id="navbar">
-      <a href="#" class="nav-link active">Home</a>
-      <a href="#" class="nav-link">About</a>
+      <a href="./index.html" class="nav-link active">Home</a>
+      <a href="./pages/html/about-page.html" class="nav-link">About</a>
       <a href="./pages/html/service-page.html" class="nav-link">Services</a>
       <div class="dropdown">
         <a href="./pages/html/gallary-page.html" class="nav-link">Gallery <i class="fas fa-caret-down"></i></a>
         <div class="dropdown-menu">
           <a href="./pages/html/gallery-page.html">Photos Gallery</a>
-          <a href="#">Video Gallery</a>
+          <a href="./pages/html/gallery-video.html">Video Gallery</a>
           <a href="#">Shorts Gallery</a>
         </div>
       </div>
       <a href="./pages/html/contact.html" class="nav-link">Contact</a>
     </nav>
-     <a href="tel:555-123-4567"><p>+91 555-123-4567</p></a>
     <div class="right-icons">
-      
+
       <a href="#"><i class="fab fa-whatsapp"></i></a>
       <a href="https://www.facebook.com/share/15Aij2ehhb/"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/karyam_events?igsh=MWE0aGU1dnNoaGFueA=="><i class="fab fa-instagram"></i></a>
@@ -62,7 +64,7 @@
         experiences that last a lifetime.</p>
       <div class="button-group">
         <button class="common-btn">Contact Us</button>
-        <button class="common-btn common-btn-venue">View Our Venues</button>
+        <button class="common-btn common-btn-venue">View Our Decors</button>
       </div>
     </div>
   </section>
@@ -87,45 +89,16 @@
           Maharashtra. For smooth and unforgettable events, feel free to contact us.
         </p>
 
-
-
-        <div class="service-images">
-          <div class="service-container">
-            <img src="./assets/images/front_page_images/wedding-photo.JPG" alt="Wedding Event" />
-            <div class="overlay">
-              <div class="text">Wedding Events</div>
-            </div>
-          </div>
-          <div class="service-container">
-            <img src="./assets/images/front_page_images/destination-.JPG" alt="Destination Wedding" />
-            <div class="overlay">
-              <div class="text">Destination Weddings</div>
-            </div>
-          </div>
-          <div class="service-container">
-            <img src="https://zzeeh.com/wp-content/uploads/2023/02/corporate-event-decorators.jpg"
-              alt="Corporate Event" />
-            <div class="overlay">
-              <div class="text">Corporate Events</div>
-            </div>
-          </div>
-          <div class="service-container">
-            <img src="https://cdn.balloondekor.com/14/1750496871349.webp" alt="Birthday Party">
-            <div class="overlay">
-              <div class="text">Birthday Parties</div>
-            </div>
-          </div>
-          <div class="service-container">
-            <img src="./assets/images/front_page_images/private-party.JPG" alt="Private Party" />
-            <div class="overlay">
-              <div class="text">Private Parties</div>
-            </div>
-          </div>
+        <div class="container">
+          <!-- Image Gallery -->
+          <div class="gallery" id="gallery"></div>
         </div>
-        <div>
-           <button class="cta-button" style="margin-top: 40px; width: 180px;"> <a href="./pages/html/service-page.html">Know More </a>  </button>
-        </div>
-         </div>
+        <!-- button -->
+        <!-- <div>
+          <button class="cta-button" style="margin-top: 40px; width: 180px;"> <a
+              href="./pages/html/service-page.html">Know More </a> </button>
+        </div> -->
+      </div>
     </div>
   </section>
 
@@ -186,68 +159,74 @@
   </div>
   <!-- *********************************************** -->
   <!-- -------------- FOOTER PART -->
-<footer class="footer">
-  <div class="footer-overlay">
-    <div class="footer-content">
-      <h2 class="footer-title">Karyam <span>Events</span></h2>
-      <p class="footer-subtitle">Creating Unforgettable Moments For Every Occasion</p>
-      <div class="footer-divider"></div>
+  <footer class="footer">
+    <div class="footer-overlay">
+      <div class="footer-content">
+        <h2 class="footer-title">Karyam Events</h2>
+        <p class="footer-subtitle">Creating Unforgettable Moments For Every Occasion</p>
+        <div class="footer-divider"></div>
 
-      <div class="footer-grid">
-        <!-- Quick Links -->
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="footer-grid">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li>Wedding Planning</li>
+              <li>Corporate Events</li>
+              <li>Social Gatherings</li>
+              <li>Decor & Design</li>
+              <li>Vendor Coordination</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Event Avenue, Suite 200 Celebration City, 10001</li>
+              <li><i class="fas fa-phone"></i> 555-123-4567</li>
+              <li><i class="fas fa-phone"></i> 907-530-7540</li>
+              <li><i class="fas fa-envelope"></i> info@karyamevents.com</li>
+            </ul>
+          </div>
+
+          <!-- Map -->
+          <div class="footer-section">
+            <h3>Find Us</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.8440688513256!2d78.58121637444178!3d21.277639080434728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4575f37f2cd13%3A0xf8d54a031df2bce7!2sKARYAM%20Event%20Management!5e0!3m2!1sgu!2sin!4v1753809132894!5m2!1sgu!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
-        <!-- Services -->
-        <div class="footer-section">
-          <h3>Services</h3>
-          <ul>
-            <li>Wedding Planning</li>
-            <li>Corporate Events</li>
-            <li>Social Gatherings</li>
-            <li>Decor & Design</li>
-            <li>Vendor Coordination</li>
-          </ul>
-        </div>
- 
-        <!-- Contact -->
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Event Avenue, Suite 200 Celebration City, 10001</li>
-            <li><i class="fas fa-phone"></i> 555-123-4567</li>
-            <li><i class="fas fa-phone"></i> 907-530-7540</li>
-            <li><i class="fas fa-envelope"></i> info@karyamevents.com</li>
-          </ul>
-        </div>
-
-        <!-- Map -->
-        <div class="footer-section">
-          <h3>Find Us</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.8440688513256!2d78.58121637444178!3d21.277639080434728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4575f37f2cd13%3A0xf8d54a031df2bce7!2sKARYAM%20Event%20Management!5e0!3m2!1sgu!2sin!4v1753809132894!5m2!1sgu!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-
-      <!-- Bottom -->
-      <div class="footer-bottom">
-        <p>© 2025 Karyam Event Management. All Rights Reserved.</p>
-        <div class="social-icons">
-          <a href="https://youtube.com/@karyameventmanagement?si=3lyeUbCFX4_glSYl" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/karyam_events?igsh=MWE0aGU1dnNoaGFueA==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/share/15Aij2ehhb/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2021 Karyam Event Management. All Rights Reserved.</p>
+          <div class="social-icons">
+            <a href="https://youtube.com/@karyameventmanagement?si=3lyeUbCFX4_glSYl" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/karyam_events?igsh=MWE0aGU1dnNoaGFueA==" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/15Aij2ehhb/" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 <script src="./pages/js/index.js"></script>

@@ -26,7 +26,7 @@
 .photos-container h2{
     position: absolute;
   bottom: 10px;
-  left: 30px;
+  left: 60px;
    background: linear-gradient(135deg, #ffff 0%, #ffff 100%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

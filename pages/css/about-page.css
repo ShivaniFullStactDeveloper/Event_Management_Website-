@@ -48,3 +48,84 @@
    font-size: 1.2rem;
    font-style: italic;
 }
+
+/*  about section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 5%;
+            flex-wrap: wrap;
+            /* for mobile */
+              background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.50));
+    position: relative;
+    background-image: url("../../assets/images/front_page_images/mandala_bgm-removebg-preview.png");
+    background-size: 1000px;
+    background-position: left start;
+    background-repeat: no-repeat;
+    z-index: 1;
+  
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            margin-bottom: 25px;
+            color: #d1d1d1;
+            max-width: 500px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 350px;
+            text-align: center;
+            border-bottom:  #f5d76e 8px solid;
+            border-right: #f5d76e 8px solid;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            /* border-radius: 8px; */
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                margin-bottom: 30px;
+            }
+        }
+.video-section {
+height: auto;
+  background-color: black;
+padding: 60px 20px;
+
+
+
+}
+
+        video {
+  display: block;           /* makes it behave like a block */
+  margin: 0 auto;           /* centers horizontally */
+  width: 70%; 
+       /* responsive width */
+  height: auto;             /* keep aspect ratio */
+  border-radius: 10px; 
+  padding: 20px;   
+  box-shadow: 0 4px 15px rgba(180, 134, 8, 0.3); /* optional shadow */
+}

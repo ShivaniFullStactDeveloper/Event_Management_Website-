@@ -417,9 +417,9 @@ body {
 .description {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #c0c0c0;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     animation: fadeInUp 1s ease-out forwards;
@@ -440,142 +440,86 @@ body {
     opacity: 0.8;
 }
 
-.service-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    gap: 30px;
-    margin-top: 40px;
-    padding: 0 20px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    width: 100%;
+/* SERVICE CARD */
+ .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding:20px;
+    }
+       /* .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    } */
 
-}
-
-.service-container {
-    width: 320px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: slideInUp 0.8s ease-out forwards;
-    /* background: rgba(255, 255, 255, 0.05); */
-    backdrop-filter: blur(10px);
-    /* border: 1px solid rgba(245, 215, 110, 0.1); */
-    border-top: #d4b547 5px solid;
-    text-decoration: underline;
-}
-
-.service-container:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.service-container:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.service-container:nth-child(3) {
-    animation-delay: 0.5s;
-}
-
-.service-container:nth-child(4) {
-    animation-delay: 0.7s;
-}
-
-.service-container:nth-child(5) {
-    animation-delay: 0.9s;
-}
-
-.service-container:hover {
-    transform: translateY(-10px);
-    behavior: smooth;
-    border-bottom: #d4b547 5px solid;
-    border-top: none;
-    /* box-shadow: 0 20px 40px rgba(245, 215, 110, 0.2); */
-}
-
-.service-images img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.4s ease in out;
-    /* behavior: smooth; */
-}
-
-.service-container:hover img {
-    transform: scale(1.05);
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 20px;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-.service-container:hover .overlay {
-    opacity: 1;
-}
-
-.overlay .text {
-    color: #ffffff;
-    background: linear-gradient(45deg, #ffffff, #f5d76e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-}
-
-.service-container:hover .overlay .text {
-    transform: translateY(0);
-}
-
-
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+    /* FLEX GALLERY (golden style) */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      padding: 20px 0;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .gallery-item {
+      position: relative;
+      background: #111;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+      flex: 1 1 300px; /* responsive min width */
+      max-width: 350px;
+      height: 250px;
+      border-top: 5px #f5d76e solid;
+      transition: transform 0.6s ease, box-shadow 0.6s ease, border 0.4s ease;
     }
-}
 
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
+    .gallery-item:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 20px 40px rgba(245, 215, 110, 0.3);
+      border-bottom: 5px #f5d76e solid;
+      border-top: none;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, filter 0.6s ease;
+      transform-origin: center center;
     }
-}
 
+    .gallery-item:hover img {
+      transform: scale(1.12);
+      filter: brightness(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+      padding: 30px;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      transform: translateY(0);
+    }
+
+    .gallery-title {
+      color: #f5d76e;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .gallery-desc {
+      color: white;
+      font-size: 0.9rem;
+    }
 /* ************************************************************** */
 /* Client Section */
 
@@ -1150,7 +1094,7 @@ body {
 /* -------------  FOOTER SECTION ----------------- */
 .footer {
     background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(20, 20, 20, 0.95));
-    background-image: url("../../assets/images/front_page_images/footer-image.jpg");
+    background-image: url("../../assets/images/front_page_images/footer-bgm.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1178,23 +1122,19 @@ body {
 }
 
 .footer-title {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: #f5d76e;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    font-weight: 800;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    animation-delay: 0.3s;
-    /* opacity: 0; */
-    letter-spacing: 3.5px;
+      font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(135deg, #f5d76e 0%, #e6c659 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.footer-title span {
-    color: #ffffff;
-    font-weight: 300;
-}
 
 .footer-subtitle {
     text-align: center;
