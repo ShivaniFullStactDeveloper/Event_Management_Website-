@@ -29,9 +29,9 @@
 
 .contact-container h2{
   position: absolute;
-  bottom: 10px;
+  bottom: -30px;
   left: 30px;
-  background: linear-gradient(135deg, #ffff 0%, #ffff 100%);
+ background: linear-gradient(45deg, #ffffff, #f5d76e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -41,7 +41,6 @@
   text-align: center;
   margin-bottom: 100px;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-container p{
@@ -121,6 +120,7 @@
   flex-shrink: 0;
   /* box-shadow: 0 10px 25px rgba(245, 215, 110, 0.3); */
   transition: all 0.3s ease;
+   gap: 10px;
 }
 .fa-solid{
       width: 60px;
@@ -348,7 +348,7 @@
  .social-icons {
     display: flex;
     justify-content: center;  /* center icons horizontally */
-    gap: 15px;                /* spacing between icons */
+    gap: 10px;                /* spacing between icons */
     margin-top: 15px;
   }
 
@@ -360,6 +360,6 @@
 
   .social-icons a:hover {
     transform: scale(1.2);    /* nice hover effect */
-    color: #fff;
+    color: black;
   }
 }

@@ -41,7 +41,7 @@
           <a href="#">Shorts Gallery</a>
         </div>
       </div>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="../../pages/html/contact.html" class="nav-link">Contact</a>
     </nav>
     <div class="right-icons">
       <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -52,12 +52,12 @@
     </div>
   </header>
   <!-- service -->
- <section class="about-page">
-    <h2>What We Offers</h2>
-    <p>Making your celebrations grand, elegant, and unforgettable.</p>
+ <section class="about-page ">
+    <h2>About Karyam</h2>
+    <!-- <p></p> -->
    </section>
     <!-- *********************************************** -->
-      <section class="hero">
+      <section class="hero reveal">
         <div class="hero-text">
 
             <p>
@@ -72,7 +72,7 @@
         </div>
     </section>
     <!-- video -->
-     <div class="video-section">
+     <div class="video-section reveal">
     <video src="../../assets/video/IMG_0910.MP4" 
          controls 
          autoplay 
@@ -83,7 +83,7 @@
   </video>
   </div>
   <!-- -------------- FOOTER PART -->
-<footer class="footer">
+<footer class="footer reveal">
   <div class="footer-overlay">
     <div class="footer-content">
       <h2 class="footer-title">Karyam <span>Events</span></h2>
@@ -147,5 +147,28 @@
   </div>
 </footer>
 <script src="../js/index.js"></script>
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementBottom = el.getBoundingClientRect().bottom;
+      const elementVisible = 100;
+
+      // Add animation when visible
+      if (elementTop < windowHeight - elementVisible && elementBottom > 0) {
+        el.classList.add("active");
+      } else {
+        // Remove animation when scrolled out
+        el.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+
   </body>
   </html>
