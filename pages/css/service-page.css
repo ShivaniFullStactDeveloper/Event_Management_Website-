@@ -12,7 +12,7 @@
 .ser-container::before {
   content: "";
   background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
-    url('../../assets/images/service_page_img/front-img.JPG');
+    url('../../assets/images/contact_page_img/sr121.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

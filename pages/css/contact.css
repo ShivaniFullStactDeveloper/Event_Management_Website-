@@ -13,7 +13,7 @@
   content: "";
   /* background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
     url('../../assets/images/contact-img.jpg'); */
- background-image: url('../../assets/images/contact_page_img/contact-img.jpg');
+ background-image: url('../../assets/images/service_page_img/con1.jpg');
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,8 +29,8 @@
 
 .contact-container h2{
   position: absolute;
-  bottom: -30px;
-  left: 30px;
+  bottom: 30px;
+  left: 40px;
  background: linear-gradient(45deg, #ffffff, #f5d76e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,6 +49,7 @@
   left: 30px;
   font-size: 1.2rem;
   font-style: italic;
+width: 50%;
 }
 
 /* Main Contact Section - Enhanced */
