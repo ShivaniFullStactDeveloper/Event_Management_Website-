@@ -11,13 +11,13 @@
 
 .ser-container::before {
   content: "";
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
-    url('../../assets/images/contact_page_img/sr121.jpg');
+    background-image: url('../../assets/images/service_page_img/ab223.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
       background-attachment: fixed; 
   position: absolute;
+  opacity: 0.4;
   top: 0;
   left: 0;
   height: 100%;
@@ -50,39 +50,6 @@
    color:  #f5d76e;
    letter-spacing: 1.5px;
 }
-
-/* .services-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-  padding: 40px;
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  color: white;
-}
-
-.service-card {
-  background-color: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-}
-
-.service-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.service-card h3 {
-  margin: 15px 0;
-  font-size: 16px;
-} */
 
   .services-sec {
             max-width: 1200px;
@@ -177,12 +144,13 @@
 .container::before {
   content: '';
   position: absolute;
-  left: -75px;
+  left: 0;
   top: 0;
-  width: 1000px;
+  width: 100%;
   height: 520px;
-  background: url('../../assets/images/front_page_images/mandala_bgm-removebg-preview.png') no-repeat left center;
+  /* background: url('../../assets/images/front_page_images/mandala_bgm-removebg-preview.png') no-repeat left center; */
   background-size: contain;
+  background-position: left start;
   opacity: 0.1;
 }
 

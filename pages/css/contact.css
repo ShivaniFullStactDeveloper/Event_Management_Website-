@@ -19,7 +19,7 @@
   background-size: cover;
   background-attachment: fixed; 
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.3;
   top: 0;
   left: 0;
   height: 100%;
@@ -319,8 +319,15 @@ width: 50%;
     .cont-right {
         border-left: none;
     }
-
+  .contact-container p{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 1rem;
+  font-style: italic;
+width: 90%;
     
+  }
 }
 /* Make phone & mail responsive */
 @media (max-width: 600px) {
@@ -363,4 +370,23 @@ width: 50%;
     transform: scale(1.2);    /* nice hover effect */
     color: black;
   }
+
+  .contact-container p{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  font-size: 1.2rem;
+  font-style: italic;
+width: 90%;
 }
+}
+@media (max-width: 768px) {
+
+  .contact-container p{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 1rem;
+  font-style: italic;
+width: 90%;
+}}
