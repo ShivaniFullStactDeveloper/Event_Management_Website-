@@ -210,6 +210,17 @@
   flex-shrink: 0;
 }
 
+.sparkle-star::before {
+  content: '✦';
+  position: absolute;
+  left: 10px;
+  top: -20x;
+  font-size: 35px;
+  font-weight: bold;
+  color: #f5d76e;
+  text-shadow: 0 0 10px rgba(245, 215, 110, 0.5);
+}
+
 .checkmark::before {
   content: '✓';
   position: absolute;
