@@ -1,6 +1,6 @@
 .photos-container {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -10,13 +10,15 @@
 
 .photos-container::before {
   content: "";
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
-    url('../../assets/images/service_page_img/front-img.JPG');
+  /* background: linear-gradient(135deg, rgba(10, 10, 10, 0.40), rgba(7, 7, 7, 0.40)),
+    url('../../assets/images/gallerychat.png'); */
+    background-image: url('../../assets/images/gallery_page_img/gallery-front-img.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
+   opacity: 0.6;
   top: 0;
   left: 0;
   height: 100%;

@@ -1,6 +1,6 @@
 .ser-container {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   max-height: auto;
   width: 100%;
   overflow: hidden;
@@ -17,7 +17,7 @@
   background-size: cover;
       background-attachment: fixed; 
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.6;
   top: 0;
   left: 0;
   height: 100%;

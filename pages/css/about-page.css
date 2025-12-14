@@ -1,6 +1,6 @@
 .about-page {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -12,7 +12,7 @@
   content: "";
   /* background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
     url('../../assets/images/about-image.jpg'); */
-    background-image: url('../../assets/images/about-image.jpg');
+    background-image: url('../../assets/images/about_img/about-image.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

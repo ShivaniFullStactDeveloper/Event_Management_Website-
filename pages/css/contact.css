@@ -1,7 +1,7 @@
 /* Contact Container - Hero Section */
 .contact-container {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -13,16 +13,16 @@
   content: "";
   /* background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
     url('../../assets/images/contact-img.jpg'); */
- background-image: url('../../assets/images/service_page_img/con1.jpg');
+ background-image: url('../../assets/images/contact_page_img/contact-img.jpg');
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; 
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.6;
   top: 0;
   left: 0;
-  height: 100%;
+  height:100%;
   width: 100%;
   z-index: -1;
 }

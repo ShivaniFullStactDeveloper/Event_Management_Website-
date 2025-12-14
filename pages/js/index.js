@@ -99,13 +99,13 @@
       {
         title: 'Wedding Events',
         description: "A day to celebrate love's journey join us in joy and togetherness. ",
-        image: './assets/images/front_page_images/wedding-photo.JPG',
+        image: 'https://i.pinimg.com/1200x/bd/fc/27/bdfc27350c27ffe77e740171400824cd.jpg',
        alt:'Wedding Event'
       },
       {
         title: 'Destination Wedding',
         description: 'A destination of dreams—let’s celebrate love in paradise.',
-        image: './assets/images/front_page_images/destination-.JPG',
+        image: 'https://i.pinimg.com/1200x/63/d7/43/63d743ec37aa461b8c31fb2d1be91654.jpg',
         alt: 'Destination Weddings'
       },
       {
@@ -155,13 +155,15 @@
         // *****************************************
         // ===== CLIENT SECTION CAROUSEL =====
  const testimonials = [
-      { name: "Sanket Narnaware", letter: "S", bg: "linear-gradient(135deg, #667eea, #764ba2)", stars: 5, text: "Karyam Event turned our special day into a beautiful memory! Perfect planning, elegant decor, and a truly professional team. Highly recommended!" },
-      { name: "Bhushan Jatgade", letter: "B", bg: "linear-gradient(135deg, #f093fb, #f5576c)", stars: 5, text: "Karyam Event turned our special day into a beautiful memory! Perfect planning, elegant decor, and a truly professional team. Highly recommended!" },
-      { name: "Arati Bhole", letter: "A", bg: "linear-gradient(135deg, #4facfe, #00f2fe)", stars: 4, text: "Karyam Event turned our special day into a beautiful memory! Perfect planning, elegant decor, and a truly professional team. Highly recommended!" },
-      { name: "Raj Sharma", letter: "R", bg: "linear-gradient(135deg, #fa709a, #fee140)", stars: 5, text: "Outstanding service and attention to detail! The team made our wedding absolutely magical. Every moment was perfectly orchestrated." },
-      { name: "Priya Deshmukh", letter: "P", bg: "linear-gradient(135deg, #a8edea, #fed6e3)", stars: 5, text: "Exceeded all expectations! From venue selection to final cleanup, everything was handled with utmost professionalism and care." },
-      { name: "Manoj Patil", letter: "M", bg: "linear-gradient(135deg, #ffecd2, #fcb69f)", stars: 4, text: "Creative ideas and flawless execution! They transformed our vision into reality. The best event management company in the city!" },
-      { name: "Neha Kulkarni", letter: "N", bg: "linear-gradient(135deg, #ff9a9e, #fecfef)", stars: 5, text: "Stress-free planning and beautiful results! The team's dedication and creativity made our anniversary celebration unforgettable." }
+      { name: "Vaishakh Chavhan", letter: "V", bg: "linear-gradient(135deg, #667eea, #764ba2)", stars: 5, text: "Karyam Event turned our special day into a beautiful memory! Perfect planning, elegant decor, and a truly professional team. Highly recommended!" },
+      { name: "Nikita Rewatkar", letter: "N", bg: "linear-gradient(135deg, #f093fb, #f5576c)", stars: 4, text: "Professional team, beautiful execution, and smooth coordination. Karyam Event Management exceeded expectations." },
+      { name: "Bhushan Jatgade", letter: "B", bg: "linear-gradient(135deg, #4facfe, #00f2fe)", stars: 4, text: "Karyam Event Management delivered a flawless event with excellent planning and execution. Truly professional and reliable." },
+      { name: "Shivani Kharpuriya", letter: "S", bg: "linear-gradient(135deg, #fa709a, #fee140)", stars: 4, text: "Very happy with Karyam Event Management. Their dedication, creativity, and attention to detail made our event truly very special." },
+      { name: "Sanket Narnavre", letter: "S", bg: "linear-gradient(135deg, #a8edea, #fed6e3)", stars: 3, text: "Extremely happy with the fantastic job done by the KARYM EVENT... Highly recommend to anyone looking for reliable event management services." },
+      { name: "Vrushabh Rode ", letter: "V", bg: "linear-gradient(135deg, #ffecd2, #fcb69f)", stars: 4, text: "Outstanding experience with Karyam event Management. Their team delivered an exceptional event, exceeding our expectations." },
+      { name: "Robin Khurpade", letter: "R", bg: "linear-gradient(135deg, #ff9a9e, #fecfef)", stars: 5, text: "Excellent service by Karyam Event Management. From planning to execution, everything was handled professionally. The event exceeded our expectations." },
+      { name: "Arati Bhole", letter: "A", bg: "linear-gradient(135deg, #ff9a9e, #fecfef)", stars: 5, text: "Stress-free planning and beautiful results! The team's dedication and creativity made our anniversary celebration unforgettable." },
+      { name: "Rushikesh Darbhe", letter: "R", bg: "linear-gradient(135deg, #ff9a9e, #fecfef)", stars: 4, text: "Very reliable and professional team. Karyam Event Management took care of every detail and ensured a smooth, stress-free event." },
     ];
 
     const track = document.getElementById('carouselTrack');

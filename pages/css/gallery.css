@@ -1,6 +1,6 @@
 .photos-container {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -10,8 +10,8 @@
 
 .photos-container::before {
   content: "";
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(7, 7, 7, 0.50)),
-    url('../../assets/images/service_page_img/front-img.JPG');
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0), rgba(7, 7, 7, 0)),
+    url('../../assets/images/gallerychat.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
