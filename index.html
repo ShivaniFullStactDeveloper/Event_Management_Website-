@@ -3,70 +3,118 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Karyam Event Management</title>
   <link rel="icon" href="./assets/images/logo/karyam-logo-icon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <!-- bootstrap css -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <!-- bootstrap js -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-  <!-- Extartnal CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./pages/css/main.css">
-  <link href="">
-  <style>
-
-  </style>
+  <script src="./pages/js/index.js" defer></script>
 </head>
 
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header class="header" id="header">
+
+    <!-- Logo -->
     <img class="logo" src="./assets/images/logo/karyam-logo-icon.ico" alt="Karyam Logo" />
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
+      <!-- Home -->
       <a href="./index.html" class="nav-link active">Home</a>
+      <!-- About -->
       <a href="./pages/html/about-page.html" class="nav-link">About</a>
+     <!-- Services -->
       <a href="./pages/html/service-page.html" class="nav-link">Services</a>
+      <!-- Gallery -->
       <div class="dropdown">
-        <a href="./pages/html/gallery-page.html" class="nav-link">Gallery <i class="fas fa-caret-down"></i></a>
+        <a href="./pages/html/gallery-page.html" class="nav-link">
+          Gallery <i class="fas fa-caret-down" style="font-size:0.7rem; margin-left:4px;"></i>
+        </a>
         <div class="dropdown-menu">
-          <a href="./pages/html/gallery-page.html">Photos Gallery</a>
-          <a href="./pages/html/gallery-video.html">Video Gallery</a>
-      
+          <a href="./pages/html/gallery-page.html">
+            <i class="fas fa-images" style="margin-right:10px; font-size:0.75rem; opacity:0.6;"></i>Photos Gallery
+          </a>
+          <a href="./pages/html/gallery-video.html">
+            <i class="fas fa-play-circle" style="margin-right:10px; font-size:0.75rem; opacity:0.6;"></i>Video Gallery
+          </a>
         </div>
       </div>
       <a href="./pages/html/contact.html" class="nav-link">Contact</a>
     </nav>
-    <div class="right-icons">
 
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/share/15Aij2ehhb/"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/karyam_events?igsh=MWE0aGU1dnNoaGFueA=="><i class="fab fa-instagram"></i></a>
-      <a href="https://youtube.com/@karyameventmanagement?si=3lyeUbCFX4_glSYl"><i class="fab fa-youtube"></i></a>
-      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    <!-- Right Icons -->
+    <div class="right-icons">
+      <a href="#" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/15Aij2ehhb/" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/karyam_events?igsh=MWE0aGU1dnNoaGFueA==" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@karyameventmanagement?si=3lyeUbCFX4_glSYl" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+
   </header>
 
-  <section class="carousel-container">
+  <!-- ===== HERO SECTION ===== -->
+  <section class="carousel-container" id="home">
+    <!-- Content -->
     <div class="carousel-overlay-content">
-      <h2>Karyam Event Management</h2>
+
+      <!-- Heading -->
+      <h2>
+        Karyam
+        <span>Event Management</span>
+      </h2>
+
+      <!-- Subheading -->
       <h4>Creating Unforgettable Moments</h4>
-      <p>From intimate weddings to grand corporate gatherings, we transform your vision into extraordinary
-        experiences that last a lifetime.</p>
+
+      <!-- Decorative divider -->
+      <div class="hero-divider">
+        <span></span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star" style="font-size:0.55rem;"></i>
+        <i class="fas fa-star"></i>
+        <span style="background: linear-gradient(to left, transparent, var(--gold));"></span>
+      </div>
+
+      <!-- Description -->
+      <p>From intimate weddings to grand corporate gatherings, we transform your vision into
+        extraordinary experiences that last a lifetime.</p>
+
+      <!-- CTA Buttons -->
       <div class="button-group">
-        <button class="common-btn">Contact Us</button>
-        <!-- <button class="common-btn common-btn-venue">View Our Decors</button> -->
+        <button class="common-btn" onclick="window.location.href='./pages/html/contact.html'">
+          <span>Contact Us</span>
+        </button>
+        <button class="common-btn btn-service" style="border-color: rgba(245,215,110,0.35); "
+          onclick="window.location.href='./pages/html/service-page.html'">
+          <span>Our Services</span>
+        </button>
       </div>
     </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+
   </section>
 
   <section class="services-section">
